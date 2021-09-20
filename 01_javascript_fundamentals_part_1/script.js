@@ -1,4 +1,40 @@
+// Assign variable and use it in an if statement
 let js = 'amazing';
-if (js === 'amazing') alert('JavaScript is FUN!');
+if(js === 'amazing') console.log('JavaScript is amazing!');
 
+// console.log examples
 console.log(40 + 8 + 23 - 10);
+console.log('Jonas');
+console.log(23);
+
+// Naming Convention is camelCase
+let firstName = 'Matt';
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
+
+/*
+   Can only use numbers, letters, underscores, and $
+   Invalid Examples:
+     let 3years = 3;
+     let janas&matilda = 'JM'
+*/
+
+/*
+  Other Rules:
+  - Do not start variable with uppercase letter.
+  - Constant variables are capitalized
+  - Make variable names descriptive:
+      myFirstJob vs job1
+      myCurrentJob vs job2
+*/
+
+// Assignment 1: Values and Variables
+let country = 'United States';
+let continent = 'North America';
+let population = 328.2;
+
+console.log(country);
+console.log(continent);
+console.log(population);
+// End Assignment 1: Values and Variables
