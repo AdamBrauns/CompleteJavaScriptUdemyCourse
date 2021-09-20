@@ -38,3 +38,22 @@ console.log(country);
 console.log(continent);
 console.log(population);
 // End Assignment 1: Values and Variables
+
+// Data Type Section
+// Dynamic typing is possible with variables
+let javaScriptIsFun = true;
+console.log(typeof javaScriptIsFun);
+javaScriptIsFun = 'Yes!';
+console.log(typeof javaScriptIsFun);
+
+// Undefined Variable
+let year;
+console.log(year);
+console.log(typeof year);
+
+year = 2021;
+console.log(year);
+console.log(typeof year);
+
+// null returns as an object and is considered a bug but is kept for legacy reasons
+console.log(typeof null);
