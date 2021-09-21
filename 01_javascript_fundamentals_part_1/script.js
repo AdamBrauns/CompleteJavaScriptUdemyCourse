@@ -60,10 +60,34 @@ console.log(typeof null);
 
 // Assignment 2: Values and Variables
 let isIsland = false;
-let language;
+let language1;
 
 console.log(isIsland);
 console.log(population);
 console.log(country);
-console.log(language);
+console.log(language1);
 // End Assignment 2: Values and Variables
+
+// let, const and var
+// let is good for mutable and unassigned 
+let height;
+let age = 30;
+age = 31;
+
+// const is immutable
+const birthYear = 1970;
+// birthYear = 1920; => this will error
+// const job; => this will also error
+
+/*
+  const is best unless you are sure the variable will change
+  var should be avoided
+  It is possible to declare a variable without keyword, but should be avoided
+*/
+
+// Assignment 3: let, const and var
+const language2 = 'English';
+console.log(language2);
+// language2 = 'French'; => this fails
+
+// End Assignment 3: let, const and var
