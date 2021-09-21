@@ -91,3 +91,41 @@ console.log(language2);
 // language2 = 'French'; => this fails
 
 // End Assignment 3: let, const and var
+
+// Basic operators
+const currentYear = 2037;
+const ageJonas = currentYear - 1991;
+const ageSara = currentYear - 2018;
+console.log(ageJonas, ageSara);
+console.log(ageJonas * 2, 2 ** 3); // 2 ** 3 is 2 to the power of 3
+
+// Concat strings
+const firstName2 = 'Joe';
+const lastName2 = 'Schmoe';
+console.log(firstName2 + ' ' + lastName2);
+
+// Assignment operators
+let x = 10 + 5;
+x += 10; // x = x + 10
+x *= 4; // x = x * 4
+x ++; // x = x + 1
+x --; // x = x -1
+console.log(x);
+
+// Comparison operators
+console.log(ageJonas > ageSara); // >, <, <=, >=
+const isFullAge = ageSara >= 18;
+console.log(isFullAge);
+
+// Assignment 4: Basic Operators
+let halfPopulation = population / 2;
+halfPopulation++;
+console.log(halfPopulation);
+
+const finlandPopulation = 6;
+console.log(population > finlandPopulation);
+
+const avgPopulation = 33;
+console.log(population > avgPopulation);
+description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+console.log(description);
