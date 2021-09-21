@@ -57,3 +57,13 @@ console.log(typeof year);
 
 // null returns as an object and is considered a bug but is kept for legacy reasons
 console.log(typeof null);
+
+// Assignment 2: Values and Variables
+let isIsland = false;
+let language;
+
+console.log(isIsland);
+console.log(population);
+console.log(country);
+console.log(language);
+// End Assignment 2: Values and Variables
