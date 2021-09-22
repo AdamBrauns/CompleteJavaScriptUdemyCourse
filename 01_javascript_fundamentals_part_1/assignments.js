@@ -62,3 +62,22 @@ if ( population > avgPopulation ){
   console.log(`${country}'s population is ${avgPopulation - population} below average.`);
 }
 // End Assignment 6: Taking decisions if else statements
+
+// Assignment 7: Type Conversion and Coercion
+let n;
+
+n = '9' - '5'; // Results in 4
+console.log(n);
+
+n = '19' - '13' + '17'; // Results in 617
+console.log(n);
+
+n = '19' - '13' + 17; // Results in 23
+console.log(n);
+
+n = '123' < 57; // Results in false
+console.log(n);
+
+n = 5 + 6 + '4' + 9 - 4 - 2; // Results in 1143
+console.log(n);
+// End Assignment 7: Type Conversion and Coercion
