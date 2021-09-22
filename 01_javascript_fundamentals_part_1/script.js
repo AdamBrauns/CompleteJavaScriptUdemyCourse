@@ -29,16 +29,6 @@ console.log(firstName);
       myCurrentJob vs job2
 */
 
-// Assignment 1: Values and Variables
-let country = 'United States';
-let continent = 'North America';
-let population = 328.2;
-
-console.log(country);
-console.log(continent);
-console.log(population);
-// End Assignment 1: Values and Variables
-
 // Data Type Section
 // Dynamic typing is possible with variables
 let javaScriptIsFun = true;
@@ -58,16 +48,6 @@ console.log(typeof year);
 // null returns as an object and is considered a bug but is kept for legacy reasons
 console.log(typeof null);
 
-// Assignment 2: Values and Variables
-let isIsland = false;
-let language1;
-
-console.log(isIsland);
-console.log(population);
-console.log(country);
-console.log(language1);
-// End Assignment 2: Values and Variables
-
 // let, const and var
 // let is good for mutable and unassigned 
 let height;
@@ -84,13 +64,6 @@ const birthYear = 1970;
   var should be avoided
   It is possible to declare a variable without keyword, but should be avoided
 */
-
-// Assignment 3: let, const and var
-const language2 = 'English';
-console.log(language2);
-// language2 = 'French'; => this fails
-
-// End Assignment 3: let, const and var
 
 // Basic operators
 const currentYear = 2037;
@@ -116,16 +89,3 @@ console.log(x);
 console.log(ageJonas > ageSara); // >, <, <=, >=
 const isFullAge = ageSara >= 18;
 console.log(isFullAge);
-
-// Assignment 4: Basic Operators
-let halfPopulation = population / 2;
-halfPopulation++;
-console.log(halfPopulation);
-
-const finlandPopulation = 6;
-console.log(population > finlandPopulation);
-
-const avgPopulation = 33;
-console.log(population > avgPopulation);
-description = 'Portugal is in Europe, and its 11 million people speak portuguese';
-console.log(description);

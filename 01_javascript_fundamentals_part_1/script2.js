@@ -36,15 +36,23 @@ console.log(`String with
 multiple
 lines`);
 
-// Assignment 5 Strings and Template Literals
-const country = 'Portugal';
-const population = 11;
-const language = 'portuguese';
-// Old way:
-//const description = country + ' is in Europe, and its ' + population + ' million people speak ' + language;
-//console.log(description);
+// Taking Decisions: if / else statements
+const age = 15;
+const drivingAge = 16;
 
-// New way:
-const description = `${country} is in Europe, and its ${population} million people speak ${language}`;
-console.log(description);
-// End Assignment 5 Strings and Template Literals
+if ( age >= drivingAge ) {
+  console.log(`Sarah can start driving`);
+} else {
+  const yearsLeft = drivingAge - age;
+  console.log(`Sarah is too young, wait another ${yearsLeft} year(s).`);
+}
+
+let century;
+const birthYear2 = 2012;
+
+if ( birthYear2 <= 2000 ) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
