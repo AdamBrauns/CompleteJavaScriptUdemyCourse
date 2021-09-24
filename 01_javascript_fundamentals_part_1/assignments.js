@@ -81,3 +81,15 @@ console.log(n);
 n = 5 + 6 + '4' + 9 - 4 - 2; // Results in 1143
 console.log(n);
 // End Assignment 7: Type Conversion and Coercion
+
+// Assignment 8: Equality Operators: == vs ===
+const numNeighbors = Number(prompt('How many neighbor countries does your country have?'));
+if ( numNeighbors === 1 ) {
+  console.log('Only 1 border!');
+} else if ( numNeighbors >> 1 ) {
+  console.log('More than 1 border!');
+} else {
+  console.log('No borders!');
+}
+
+// End Assignment 8: Equality Operators: == vs ===
