@@ -27,7 +27,7 @@ if ( height ) {
 
 // Equality Operators == vs ===
 // === strict comparison
-const age = 18;
+let age = 18;
 if ( age === 18 ) console.log('You just became an adult');
 
 // == loose comparison
@@ -120,3 +120,23 @@ if ( day === 'monday') {
 } else {
   console.log('Not a valid day');
 }
+
+// Conditional (ternary) operator
+age = 23;
+// If ? then : else
+age >= 18 ? console.log('I like to play golf') : console.log('I like to play basketball');
+
+let sport = age >= 18? 'golf' : 'basketball';
+console.log(sport);
+
+// If else standard comparison
+if ( age >= 18 ) {
+  sport = 'golf';
+} else {
+  sport = 'basketball';
+}
+console.log(sport);
+
+// ternary used in template literal
+console.log(`I like to play ${age >= 18 ? 'golf' : 'basketball'}`);
+// ternary is only used for quick comparison
