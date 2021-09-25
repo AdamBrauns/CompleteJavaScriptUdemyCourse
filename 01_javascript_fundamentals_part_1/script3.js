@@ -80,3 +80,43 @@ if ( hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log('Someone else should drive...');
 }
+
+// The Switch Statement
+const day = 'sunday';
+
+switch ( day ) {
+  case 'monday': // day === 'monday'
+    console.log('Play some golf');
+    break;
+  case 'tuesday':
+    console.log('Go for a walk');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples'); // matches both wednesday and thursday
+    break;
+  case 'friday':
+    console.log('Record video');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy weekend');
+    break;
+  default:
+    console.log('Not a valid day');
+}
+
+// If else equivalent 
+if ( day === 'monday') {
+  console.log('Play some golf');
+} else if ( day === 'tuesday' ) {
+  console.log('Go for a walk');
+} else if ( day === 'wednesday' || day === 'thursday' ) {
+  console.log('Write code examples');
+} else if ( day === 'friday' ) {
+  console.log('Record video');
+} else if ( day === 'saturday' || day === 'sunday' ) {
+  console.log('Enjoy weekend');
+} else {
+  console.log('Not a valid day');
+}
