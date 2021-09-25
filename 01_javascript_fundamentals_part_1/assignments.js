@@ -127,3 +127,9 @@ switch ( language ) {
     console.log('Great language too');
 }
 // End Assignment 10: switch statement
+
+// Assignment 11: ternary operator
+const ternaryStr = population > 33 ? 'above' : 'below';
+console.log(`Portugal's population is ${ternaryStr} average`);
+
+// End Assignment 11: ternary operator
