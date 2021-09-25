@@ -42,7 +42,7 @@ console.log(description);
 // Assignment 5 Strings and Template Literals
 country = 'Portugal';
 population = 11;
-const language = 'portuguese';
+let language = 'portuguese';
 // Old way:
 //const description = country + ' is in Europe, and its ' + population + ' million people speak ' + language;
 //console.log(description);
@@ -93,3 +93,14 @@ if ( numNeighbors === 1 ) {
 }
 
 // End Assignment 8: Equality Operators: == vs ===
+
+// Assignment 9: Logical Operators
+language = 'English';
+population = 20;
+isIsland = false;
+if ( language === 'English' && population < 50 && !isIsland ) {
+  console.log('You should live in Jonasville');
+} else {
+  console.log('Jonasville does not meet your criteria :(');
+}
+// End Assignment 9: Logical Operators
