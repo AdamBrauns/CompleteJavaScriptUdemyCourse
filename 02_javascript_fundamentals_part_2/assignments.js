@@ -1,3 +1,4 @@
+'use strict';
 // Assignment 1: Functions
 function describeCountry ( country, population, capitalCity ) {
   const returnStr = `${country} has ${population} million people and its capital city is ${capitalCity}`;
@@ -49,10 +50,17 @@ console.log(chinaPercent3);
 
 // Assignment 4: Functions calling other functions
 const describePopulation = ( country, population ) => {
-  countryPopulationPercent = percentageOfWorld1(population);
+  const countryPopulationPercent = percentageOfWorld1(population);
   return `${country} has ${population} million people which is about ${countryPopulationPercent}% of the world`;
 }
 console.log(describePopulation('Finland', 6));
 console.log(describePopulation('United States', 330));
 console.log(describePopulation('China', 1400));
 // End Assignment 4: Functions calling other functions
+
+// Assignment 5: arrays
+const populationArray = [6, 330, 1400, 38];
+if ( populationArray.length === 4) console.log('Array has 4 elements');
+const populationArrayPercent = [percentageOfWorld1(populationArray[0]), percentageOfWorld1(populationArray[1]), percentageOfWorld1(populationArray[2]), percentageOfWorld1(populationArray[populationArray.length - 1]),];
+console.log(populationArrayPercent);
+// End Assignment 5: arrays
