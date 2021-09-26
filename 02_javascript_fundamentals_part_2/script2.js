@@ -36,3 +36,31 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+
+// Array methods
+const newLength = friends.push('Aaron'); // push returns the new length
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John'); // This prepends an item to the list
+console.log(friends);
+
+friends.pop(); // Removes the last element
+const popped = friends.pop(); // Returns the elements that was removed
+console.log(friends);
+console.log(popped);
+
+friends.shift(); // Remove the first element
+console.log(friends);
+
+console.log(friends.indexOf('Larry')); // Returns the index of the item
+console.log(friends.indexOf('Bob')); // Returns -1 if the item is not found
+
+console.log(friends.includes('Larry')); // Returns true if found
+console.log(friends.includes('Bob')); // Returns false if not found
+friends.push(23);
+console.log(friends.includes('23')); // Uses strict so this returns false
+
+if ( friends.includes('Larry')) {
+  console.log('You have a friend named Peter');
+}

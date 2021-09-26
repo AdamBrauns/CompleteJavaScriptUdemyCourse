@@ -64,3 +64,14 @@ if ( populationArray.length === 4) console.log('Array has 4 elements');
 const populationArrayPercent = [percentageOfWorld1(populationArray[0]), percentageOfWorld1(populationArray[1]), percentageOfWorld1(populationArray[2]), percentageOfWorld1(populationArray[populationArray.length - 1]),];
 console.log(populationArrayPercent);
 // End Assignment 5: arrays
+
+// Assignment 6: Basic array operations
+const neighbors = ['Canada', 'Mexico'];
+neighbors.push('Utopia');
+neighbors.pop();
+if ( neighbors.includes('Germany')) {
+  console.log('Probably not a central European country');
+}
+neighbors[neighbors.indexOf('Mexico')] = 'Republic of Sweden';
+console.log(neighbors);
+// End Assignment 6: Basic array operations
