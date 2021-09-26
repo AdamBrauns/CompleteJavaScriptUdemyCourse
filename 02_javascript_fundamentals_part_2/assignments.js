@@ -35,3 +35,14 @@ console.log(finlandPercent1, finlandPercent2);
 console.log(unitedStatesPercent1, unitedStatesPercent2);
 console.log(chinaPercent1, chinaPercent2);
 // End Assignment 2: Function declarations vs expressions
+
+// Assignment 3: Arrow functions
+const percentageOfWorld3 = population => ( population / 7900 ) * 100;
+const finlandPercent3 = percentageOfWorld3(6);
+const unitedStatesPercent3 = percentageOfWorld3(330);
+const chinaPercent3 = percentageOfWorld3(1400);
+
+console.log(finlandPercent3);
+console.log(unitedStatesPercent3);
+console.log(chinaPercent3);
+// End Assignment 3: Arrow functions
