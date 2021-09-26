@@ -46,3 +46,13 @@ console.log(finlandPercent3);
 console.log(unitedStatesPercent3);
 console.log(chinaPercent3);
 // End Assignment 3: Arrow functions
+
+// Assignment 4: Functions calling other functions
+const describePopulation = ( country, population ) => {
+  countryPopulationPercent = percentageOfWorld1(population);
+  return `${country} has ${population} million people which is about ${countryPopulationPercent}% of the world`;
+}
+console.log(describePopulation('Finland', 6));
+console.log(describePopulation('United States', 330));
+console.log(describePopulation('China', 1400));
+// End Assignment 4: Functions calling other functions
