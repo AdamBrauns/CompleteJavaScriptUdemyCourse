@@ -64,3 +64,13 @@ console.log(friends.includes('23')); // Uses strict so this returns false
 if ( friends.includes('Larry')) {
   console.log('You have a friend named Peter');
 }
+
+// Introduction to objects
+const joe = {
+  firstName: 'Joe',
+  lastName: 'Schmoe',
+  age: 2037 - 1991,
+  friends: ['Frank', 'Larry', 'Joe']
+}
+
+console.log(joe.firstName);

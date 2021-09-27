@@ -75,3 +75,13 @@ if ( neighbors.includes('Germany')) {
 neighbors[neighbors.indexOf('Mexico')] = 'Republic of Sweden';
 console.log(neighbors);
 // End Assignment 6: Basic array operations
+
+// Assignment 7: Introduction to Objects
+const myCountry = {
+  country: 'United States',
+  capital: 'Washington, D.C.',
+  population: 330
+}
+
+console.log(myCountry.country);
+// End Assignment 7: Introduction to Objects
