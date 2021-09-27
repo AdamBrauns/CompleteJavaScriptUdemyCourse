@@ -70,7 +70,30 @@ const joe = {
   firstName: 'Joe',
   lastName: 'Schmoe',
   age: 2037 - 1991,
+  job: 'teacher',
   friends: ['Frank', 'Larry', 'Joe']
 }
 
-console.log(joe.firstName);
+console.log(joe);
+
+// Dot vs Bracket Notation
+console.log(joe.lastName); // Dot
+console.log(joe['lastName']); // Brackets
+
+// Bracket can do expressions
+const nameKey = 'Name';
+console.log(joe['first' + nameKey]);
+console.log(joe['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Joe? Choose between firstName, lastName, age, job, friends');
+
+if ( joe[interestedIn] ){
+  console.log(joe[interestedIn]);
+} else {
+  console.log('Wrong request, choose between firstName, lastName, age, job, friends');
+}
+
+joe.location = 'Portugal';
+joe['eyeColor'] = 'Blue';
+console.log(joe);
+console.log(`${joe.firstName} has ${joe.friends.length} friend(s) and his best friend is named ${joe.friends[0]}`);

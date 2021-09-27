@@ -80,8 +80,17 @@ console.log(neighbors);
 const myCountry = {
   country: 'United States',
   capital: 'Washington, D.C.',
-  population: 330
+  language: 'English',
+  population: 330,
+  neighbors: 2,
 }
 
 console.log(myCountry.country);
 // End Assignment 7: Introduction to Objects
+
+// Assignment 8: Dot vs Bracket Notation
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
+myCountry.population += 2;
+myCountry['population'] -= 2;
+console.log(myCountry.population);
+// End Assignment 8: Dot vs Bracket Notation
