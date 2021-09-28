@@ -106,3 +106,9 @@ myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
 // End Assignment 9: Object Methods
+
+// Assignment 10: For loops
+for ( let voter = 1; voter <= 10; voter++ ) {
+  console.log(`Voter number ${voter} is currently voting...`);
+}
+// End Assignment 10: For loops
