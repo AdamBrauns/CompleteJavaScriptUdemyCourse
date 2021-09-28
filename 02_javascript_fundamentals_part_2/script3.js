@@ -30,3 +30,44 @@ console.log(joe.getSummary());
 for ( let rep = 1; rep <= 10; rep ++ ){
   console.log(`Lifting weights, on repetition ${rep}...`);
 }
+
+// Looping arrays, breaking and continuing
+const fredArray = [
+  'Joe',
+  'Schmoe',
+  1983,
+  'teacher',
+  ['Frank', 'Larry', 'Joe'],
+  true,
+];
+
+const types = [];
+
+for ( let i = 0; i < fredArray.length; i ++ ) {
+  // Reading in from fredArray
+  console.log(fredArray[i], typeof fredArray[i]);
+  // Filling in types arrya
+  types.push(typeof fredArray[i]);
+  // types[i] = typeof fredArray[i]; different way to do it
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for ( let i = 0; i < years.length; i++ ) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---ONLY STRINGS---');
+for ( let i = 0; i < fredArray.length; i ++ ) {
+  if ( typeof fredArray[i] !== 'string' ) continue;
+  console.log(fredArray[i], typeof fredArray[i]);
+}
+
+console.log('---BREAK WITH NUMBER---');
+for ( let i = 0; i < fredArray.length; i ++ ) {
+  if ( typeof fredArray[i] === 'number' ) break;
+  console.log(fredArray[i], typeof fredArray[i]);
+}

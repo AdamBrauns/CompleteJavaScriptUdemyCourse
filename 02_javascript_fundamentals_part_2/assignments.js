@@ -112,3 +112,12 @@ for ( let voter = 1; voter <= 10; voter++ ) {
   console.log(`Voter number ${voter} is currently voting...`);
 }
 // End Assignment 10: For loops
+
+// Assignment 11: Looping arrays, breaking and continuing
+const percentages2 = [];
+for ( let i = 0; i < populationArray.length; i++ ) {
+  percentages2.push(percentageOfWorld1(populationArray[i]));
+}
+console.log(percentages2);
+console.log(populationArrayPercent);
+// End Assignment 11: Looping arrays, breaking and continuing
