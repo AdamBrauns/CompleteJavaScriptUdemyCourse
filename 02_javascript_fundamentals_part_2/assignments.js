@@ -121,3 +121,12 @@ for ( let i = 0; i < populationArray.length; i++ ) {
 console.log(percentages2);
 console.log(populationArrayPercent);
 // End Assignment 11: Looping arrays, breaking and continuing
+
+// Assignment 12: Looping backwards and loops in loops
+const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+for ( let i = 0; i < listOfNeighbors.length; i++ ) {
+  for ( let j = 0; j < listOfNeighbors[i].length; j++ ) {
+    console.log(`Neighbor: ${listOfNeighbors[i][j]}`);
+  }
+}
+// End Assignment 12: Looping backwards and loops in loops
