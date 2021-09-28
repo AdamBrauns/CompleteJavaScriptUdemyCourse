@@ -130,3 +130,13 @@ for ( let i = 0; i < listOfNeighbors.length; i++ ) {
   }
 }
 // End Assignment 12: Looping backwards and loops in loops
+
+// Assignment 13: The while loop
+const percentages3 = [];
+let i = 0;
+while ( i < populationArray.length) {
+  percentages3.push(percentageOfWorld1(populationArray[i]));
+  i++;
+}
+console.log(percentages3);
+// End Assignment 13: The while loop
