@@ -1,14 +1,14 @@
 // Assign variable and use it in an if statement
-let js = 'amazing';
-if(js === 'amazing') console.log('JavaScript is amazing!');
+let js = "amazing";
+if (js === "amazing") console.log("JavaScript is amazing!");
 
 // console.log examples
 console.log(40 + 8 + 23 - 10);
-console.log('Jonas');
+console.log("Jonas");
 console.log(23);
 
 // Naming Convention is camelCase
-let firstName = 'Matt';
+let firstName = "Matt";
 console.log(firstName);
 console.log(firstName);
 console.log(firstName);
@@ -33,7 +33,7 @@ console.log(firstName);
 // Dynamic typing is possible with variables
 let javaScriptIsFun = true;
 console.log(typeof javaScriptIsFun);
-javaScriptIsFun = 'Yes!';
+javaScriptIsFun = "Yes!";
 console.log(typeof javaScriptIsFun);
 
 // Undefined Variable
@@ -49,7 +49,7 @@ console.log(typeof year);
 console.log(typeof null);
 
 // let, const and var
-// let is good for mutable and unassigned 
+// let is good for mutable and unassigned
 let height;
 let age = 30;
 age = 31;
@@ -73,16 +73,16 @@ console.log(ageJonas, ageSara);
 console.log(ageJonas * 2, 2 ** 3); // 2 ** 3 is 2 to the power of 3
 
 // Concat strings
-const firstName2 = 'Joe';
-const lastName2 = 'Schmoe';
-console.log(firstName2 + ' ' + lastName2);
+const firstName2 = "Joe";
+const lastName2 = "Schmoe";
+console.log(firstName2 + " " + lastName2);
 
 // Assignment operators
 let x = 10 + 5;
 x += 10; // x = x + 10
 x *= 4; // x = x * 4
-x ++; // x = x + 1
-x --; // x = x -1
+x++; // x = x + 1
+x--; // x = x -1
 console.log(x);
 
 // Comparison operators

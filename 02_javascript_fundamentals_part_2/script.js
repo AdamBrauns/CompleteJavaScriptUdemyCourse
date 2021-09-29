@@ -7,7 +7,7 @@ const passTest = true;
 
 // Without strict, there is no error mode when the variable is mistyped
 // if ( passTest ) hasDriverLicense = true;
-if ( hasDriversLicense ) console.log('I can drive');
+if (hasDriversLicense) console.log('I can drive');
 
 // strict mode will error for reserved words
 //const interface = 'Audio';
@@ -23,7 +23,7 @@ logger();
 logger();
 logger();
 
-function fruitProcessor( apples, oranges ) {
+function fruitProcessor(apples, oranges) {
   const juice = `Juice with ${apples} apples and ${oranges} oranges`;
   return juice;
 }
@@ -36,40 +36,40 @@ console.log(orangeJuice);
 
 // Function declaration vs expressions
 // Function declaration
-function calcAge1( birthYear ) {
+function calcAge1(birthYear) {
   return 2037 - birthYear;
 }
 const age1 = calcAge1(1991);
 
 // Function expression
-const calcAge2 = function ( birthYear ) {
+const calcAge2 = function (birthYear) {
   return 2037 - birthYear;
-}
+};
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
 
 // Arrow functions
 // return value happens automatically if it's a one liner
-const calcAge3 = birthYear =>  2037 - birthYear;
+const calcAge3 = (birthYear) => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
 
-const yearsUntilRetirement = ( birthYear, firstName ) => {
+const yearsUntilRetirement = (birthYear, firstName) => {
   const age = 2037 - birthYear;
   const retirementAge = 65 - age;
   return `${firstName} retires in ${retirementAge} years`;
-}
+};
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1995, 'Bob'));
 
 // Functions calling other functions
-function cutFruitPieces( fruit ) {
+function cutFruitPieces(fruit) {
   return fruit * 4;
 }
 
-function fruitProcessor2( apples, oranges ) {
+function fruitProcessor2(apples, oranges) {
   const applePieces = cutFruitPieces(apples);
   const orangePieces = cutFruitPieces(oranges);
   const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
@@ -79,21 +79,21 @@ function fruitProcessor2( apples, oranges ) {
 console.log(fruitProcessor2(2, 3));
 
 // Function review
-const calcAge4 = function( birthYear ) {
+const calcAge4 = function (birthYear) {
   return 2037 - birthYear;
-}
+};
 
-const yearsUntilRetirement4 = function ( birthYear, firstName ) {
+const yearsUntilRetirement4 = function (birthYear, firstName) {
   const age = calcAge4(birthYear);
   const retirementAge = 65 - age;
-  if ( retirementAge > 0 ) {
+  if (retirementAge > 0) {
     console.log(`${firstName} retires in ${retirementAge} years`);
     return retirementAge;
   } else {
     console.log(`${firstName} has already retired.`);
     return -1;
   }
-}
+};
 
 console.log(yearsUntilRetirement4(1991, 'Jonas'));
 console.log(yearsUntilRetirement4(1950, 'Mike'));

@@ -20,9 +20,9 @@ values (so don't store the tip values in separate variables first, but right in 
 array)
 */
 
-const calcTip = function ( billAmt ) {
-  return billAmt >= 50 && billAmt <= 300 ? billAmt * 0.15 : billAmt * 0.20;
-}
+const calcTip = function (billAmt) {
+  return billAmt >= 50 && billAmt <= 300 ? billAmt * 0.15 : billAmt * 0.2;
+};
 
 const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];

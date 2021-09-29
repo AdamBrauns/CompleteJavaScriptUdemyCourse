@@ -24,17 +24,17 @@ Hints:
 Apply this to the team's average scores
 */
 
-const calcAverage = ( score1, score2, score3 ) => ( score1 + score2 + score3 ) / 3;
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const checkWinner = function ( avgDolphins, avgKoalas ) {
-  if ( avgDolphins >= 2 * avgKoalas ) {
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
     console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
-  } else if ( avgKoalas >= 2 * avgDolphins ) {
+  } else if (avgKoalas >= 2 * avgDolphins) {
     console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
   } else {
     console.log('No team wins.');
   }
-}
+};
 
 // Data 1
 const avgDolphins = calcAverage(44, 23, 71);

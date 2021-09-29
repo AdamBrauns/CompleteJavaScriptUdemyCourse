@@ -25,15 +25,15 @@ length of the array (because that's the number of elements)
 4.3. Call the function with the 'totals' array
 */
 
-const calcTip = function ( billAmt ) {
-  return billAmt >= 50 && billAmt <= 300 ? billAmt * 0.15 : billAmt * 0.20;
-}
+const calcTip = function (billAmt) {
+  return billAmt >= 50 && billAmt <= 300 ? billAmt * 0.15 : billAmt * 0.2;
+};
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-for ( let i = 0; i < bills.length; i++ ) {
+for (let i = 0; i < bills.length; i++) {
   const tip = calcTip(bills[i]);
   tips.push(tip);
   totals.push(bills[i] + tip);
@@ -41,13 +41,13 @@ for ( let i = 0; i < bills.length; i++ ) {
 
 console.log(bills, tips, totals);
 
-const calcAverages = function ( arr ) {
+const calcAverages = function (arr) {
   let sum = 0;
-  for ( let i = 0; i < arr.length; i++ ) {
+  for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
   return sum / arr.length;
-}
+};
 
 console.log(`Average of bills: ${calcAverages(bills)}`);
 console.log(`Average of tips: ${calcAverages(tips)}`);

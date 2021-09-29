@@ -25,16 +25,20 @@ const jonas = [firstName, 'Schmoe', 2037 - 1991, 'teacher', friends];
 console.log(jonas);
 console.log(jonas.length);
 
-const calcAge = function ( birthYear ) {
+const calcAge = function (birthYear) {
   return 2037 - birthYear;
-}
+};
 const years = [1990, 1967, 2002, 2010, 2018];
 const age1 = calcAge(years[0]);
 const age2 = calcAge(years[1]);
 const age3 = calcAge(years[years.length - 1]);
 console.log(age1, age2, age3);
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
 console.log(ages);
 
 // Array methods
@@ -61,7 +65,7 @@ console.log(friends.includes('Bob')); // Returns false if not found
 friends.push(23);
 console.log(friends.includes('23')); // Uses strict so this returns false
 
-if ( friends.includes('Larry')) {
+if (friends.includes('Larry')) {
   console.log('You have a friend named Peter');
 }
 
@@ -71,7 +75,7 @@ const joe = {
   lastName: 'Schmoe',
   age: 2037 - 1991,
   job: 'teacher',
-  friends: ['Frank', 'Larry', 'Joe']
+  friends: ['Frank', 'Larry', 'Joe'],
 };
 
 console.log(joe);
@@ -85,15 +89,21 @@ const nameKey = 'Name';
 console.log(joe['first' + nameKey]);
 console.log(joe['last' + nameKey]);
 
-const interestedIn = prompt('What do you want to know about Joe? Choose between firstName, lastName, age, job, friends');
+const interestedIn = prompt(
+  'What do you want to know about Joe? Choose between firstName, lastName, age, job, friends'
+);
 
-if ( joe[interestedIn] ){
+if (joe[interestedIn]) {
   console.log(joe[interestedIn]);
 } else {
-  console.log('Wrong request, choose between firstName, lastName, age, job, friends');
+  console.log(
+    'Wrong request, choose between firstName, lastName, age, job, friends'
+  );
 }
 
 joe.location = 'Portugal';
 joe['eyeColor'] = 'Blue';
 console.log(joe);
-console.log(`${joe.firstName} has ${joe.friends.length} friend(s) and his best friend is named ${joe.friends[0]}`);
+console.log(
+  `${joe.firstName} has ${joe.friends.length} friend(s) and his best friend is named ${joe.friends[0]}`
+);
