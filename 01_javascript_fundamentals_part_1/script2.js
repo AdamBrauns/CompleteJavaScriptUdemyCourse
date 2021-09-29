@@ -13,18 +13,18 @@ const avgAge = (ageJonas + ageSara) / 2;
 console.log(ageJonas, ageSara, avgAge);
 
 // Strings and Template Literals
-const firstName = "Jonas";
-const job = "Teacher";
+const firstName = 'Jonas';
+const job = 'Teacher';
 const birthYear = 1991;
 
 const jonas =
   "I'm " +
   firstName +
-  ", a " +
+  ', a ' +
   (currentYear - birthYear) +
-  " year old " +
+  ' year old ' +
   job +
-  "!";
+  '!';
 console.log(jonas);
 
 // String literal
@@ -37,9 +37,9 @@ console.log(jonasNew);
 console.log(`Normal string`);
 
 // For multi-lines, string literal is much cleaner
-console.log("String with \n\
+console.log('String with \n\
 multiple\n\
-lines");
+lines');
 
 console.log(`String with
 multiple
@@ -71,28 +71,28 @@ console.log(century);
 // Coersion is when JS automatically converts it for us
 
 // Type Conversion
-const inputYear = "1991";
+const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 
-console.log(Number("Jonas")); // Returns NaN (not a number)
+console.log(Number('Jonas')); // Returns NaN (not a number)
 console.log(typeof NaN); // NaN is a number, but an invalid one
 console.log(String(23), 23);
 
 // Type Coercion
-console.log("I am " + 100 + " years old.");
-console.log("23" + "10" + 3); // Numbers converted to strings
-console.log("23" - "10" - 3); // Strings converted to numbers
-console.log("23" * "2");
-console.log("23" / "2");
-console.log("23" > "18");
+console.log('I am ' + 100 + ' years old.');
+console.log('23' + '10' + 3); // Numbers converted to strings
+console.log('23' - '10' - 3); // Strings converted to numbers
+console.log('23' * '2');
+console.log('23' / '2');
+console.log('23' > '18');
 
-let n = "1" + 1;
+let n = '1' + 1;
 n -= 1;
 console.log(n); // Results in 10
 
-n = 2 + 3 + 4 + "5";
+n = 2 + 3 + 4 + '5';
 console.log(n); // Results in 95
 
-n = "10" - "4" - "3" - 2 + "5";
+n = '10' - '4' - '3' - 2 + '5';
 console.log(n); // Results in 15

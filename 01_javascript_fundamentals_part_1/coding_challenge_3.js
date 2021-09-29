@@ -19,7 +19,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else if (scoreDolphins < scoreKoalas && scoreKoalas >= 100) {
   console.log("Koala's win");
 } else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100) {
-  console.log("There was a draw");
+  console.log('There was a draw');
 } else {
-  console.log("Nobody wins");
+  console.log('Nobody wins');
 }
