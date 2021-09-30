@@ -8,3 +8,9 @@ Steps to solving complex problems:
 
 To highlight multiple instances of the same text, highlight one,
 and use ctrl-d to keep selecting.
+
+There are different levels of console logging:
+console.log(measurement);
+console.warn(measurement);
+console.error(measurement);
+console.table(measurement);
