@@ -1,0 +1,19 @@
+In high-level programming, you do not have to worry about resources, with the downside of not being as optimized as low level code.
+
+Garbage-collection: algorithm in javascript engine that removed old, unused objects.
+
+Interpreted or just-in-time compiled: abstraction over 0's and 1's
+
+Multi-paradigm: Approach and overall mindset of programming. Examples:
+  - Procedural programming
+  - Object-oriented programming (OOP)
+  - Functional programming (FP)
+javascript is flexible and can do all three
+
+First-class functions: functions are simply treated as variables. You can pass them into other functions and return them from functions
+
+Dynamically typed: Can assign variables to different data types dynamically (alterative is strongly typed)
+
+concurrency model: how the javascript engine handles multiple tasks.
+  - javascript runs in one single thread, so it can only do one thing at a time
+  - Event loop takes long running tasks, executes them in the 'background' and puts them back in the main thread once they are finished
