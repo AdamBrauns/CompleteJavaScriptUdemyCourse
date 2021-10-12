@@ -1,3 +1,7 @@
+############
+# Overview #
+############
+
 In high-level programming, you do not have to worry about resources, with the downside of not being as optimized as low level code.
 
 Garbage-collection: algorithm in javascript engine that removed old, unused objects.
@@ -17,3 +21,36 @@ Dynamically typed: Can assign variables to different data types dynamically (alt
 concurrency model: how the javascript engine handles multiple tasks.
   - javascript runs in one single thread, so it can only do one thing at a time
   - Event loop takes long running tasks, executes them in the 'background' and puts them back in the main thread once they are finished
+
+#####################
+# JavaScript Engine #
+#####################
+JS Engine: program that executes javascript code
+
+Every browser has its own JS engine
+- V8 is googles JS engine that powers node js
+
+The js engine is built with:
+- Call stack: Where the code is executed (execution context)
+- Heap: unstructured memory pool (where objects are stored)
+
+compilation vs interpretation:
+- compilation: 
+  - Entire code is converted to machine code at once, and written to a binary file that can be executed by a computer.
+  - source code -> portable file -> program running
+- interpretation: Interpreter runs through the source code and executes it line by line
+  - source code -> program running
+Modern JS is a combination just-in-time compilation:
+  - source code -> machine code (not portable file) -> program running
+
+Steps of just-in-time compilation:
+1) Parsing into the abstract syntax tree (AST)
+   - Gathers info like const, functions, etc.
+2) Compilation
+   - Takes the generated AST and compiles it into machine code
+   - Happens in the call stack
+3) Optimization
+   - Starts an un-optimized version of the code
+   - Once the optimized code is available, it is replaced
+
+callback queue: for example, a click on a page is put in the callback queue and put in the call stack. This is part of the event loop.
