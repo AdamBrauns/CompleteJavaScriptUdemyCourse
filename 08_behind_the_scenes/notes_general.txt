@@ -54,3 +54,24 @@ Steps of just-in-time compilation:
    - Once the optimized code is available, it is replaced
 
 callback queue: for example, a click on a page is put in the callback queue and put in the call stack. This is part of the event loop.
+
+#########################################
+# Execution contexts and the call stack #
+#########################################
+After compilation:
+1) Global execution context is created (top level code)
+   - code outside functions 
+   - only one can exist
+2) Execution of top-level code (inside global execution context)
+3) Execution of functions and waiting for callbacks
+   - for each function, a new execution context is created
+   - after all functions have been executed, wait for callbacks
+
+Execution context contains:
+1) variable environment
+   - let, const, var declarations
+   - functions
+   - arguments object (not in arrow functions)
+2) scope chain
+   - variables outside the function
+3) this keyword (not in arrow functions)
