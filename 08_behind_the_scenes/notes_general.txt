@@ -75,3 +75,23 @@ Execution context contains:
 2) scope chain
    - variables outside the function
 3) this keyword (not in arrow functions)
+
+############################
+# Scoping and scope in js: #
+############################
+Scoping: how the program's variables are organized and accessed
+Lexical scoping: scoping is controlled by placement of functions and blocks in the code
+Scope: Space of environment in which a certain variable is declared (global, function, block scopes)
+Scope of a variable: region of our code where a certain variable can be accessed
+
+3 Types of scope:
+- Global:
+  - outside of any function or block
+  - variables declared in global scope are accessible everywhere
+- Function
+  - variables are accessible only inside function not outside
+  - also called local scope
+- Block Scope (ES6)
+  - variables are accessible only inside block (block scoped)
+    - However, this only applies to let and const variables (var is function scoped)
+  - functions are also blocked scoped (only in strict mode)
