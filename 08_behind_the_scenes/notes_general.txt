@@ -95,3 +95,18 @@ Scope of a variable: region of our code where a certain variable can be accessed
   - variables are accessible only inside block (block scoped)
     - However, this only applies to let and const variables (var is function scoped)
   - functions are also blocked scoped (only in strict mode)
+
+Hoisting: makes some types of variables accessible/usable in the code before they are actucally declared.
+  - "variables lifted to the top of their scope"
+  - Before execution code is scanned for variable declarations and for each variable a new property is created in teh variable environment
+  -------------------------------------------------------------------------------------------
+    TYPE                             Hoisted      Initial value          Scope(Strict mode)
+    function declarations            Yes          Actual function        Block
+    var variables                    Yes          undefined              Function
+    let and const variables          No           temp dead zone (TDZ)   Block
+    function expressions and arrows         All depends if using var or let/const
+  -------------------------------------------------------------------------------------------
+
+Best practices:
+- use const and let
+- declare functions and variables on top of code
