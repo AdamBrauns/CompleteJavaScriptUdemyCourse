@@ -110,3 +110,11 @@ Hoisting: makes some types of variables accessible/usable in the code before the
 Best practices:
 - use const and let
 - declare functions and variables on top of code
+
+"This keyword": special variable that is created for every execution context. It takes the value of (points to) the "owner" of the function in which the this keyword is used.
+- Method: <object that is calling the method>
+- Simple function call: is undefined
+- Arrow functions: do not get their own "this" keyword
+- Event listener: <DOM element that the handler is attached to>
+- new, call, apply, bind: later in course
+This does not point to the function itself, and will not point to variable environment
