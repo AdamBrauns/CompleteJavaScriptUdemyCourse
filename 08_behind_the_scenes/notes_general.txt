@@ -118,3 +118,16 @@ Best practices:
 - Event listener: <DOM element that the handler is attached to>
 - new, call, apply, bind: later in course
 This does not point to the function itself, and will not point to variable environment
+
+Primitives vs reference:
+Primitives:        Objects:
+- Number           - Object literal
+- String           - Arrays
+- Boolean          - Functions
+- Undefined        - Many more...
+- Null
+- Symbol
+- BigInt
+
+Primitives are stored in the call stack
+Reference are stored in the heap and referenced in the call stack
