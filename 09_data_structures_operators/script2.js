@@ -114,3 +114,32 @@ add(...x);
 
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 restaurant.orderPizza('mushrooms');
+
+// Use any data type, return any data type, short-circuiting
+// If the first is truthy, it will return it and not look past it
+console.log(3 || 'Jonas'); // returns 3
+console.log('' || 'Jonas'); // returns Jonas
+console.log(true || 0); // returns true
+console.log(undefined || null); // returns null
+console.log(undefined || 0 || '' || 'Hello' || 23 || null); // returns Hello
+
+// Example of ternary operator using OR
+console.log(restaurant.numGuests);
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+// Better way is to use short-circuiting
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+// Short-circuiting using AND (opposite result)
+console.log(0 && 'Jonas'); // returns 0
+console.log(7 && 'Jonas'); // returns Jonas
+console.log('Hello' && 23 && null && 'jonas'); // returns null
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
