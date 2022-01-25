@@ -78,3 +78,21 @@ const users = [{ firstName: 'Jonas', email: 'hello@gmail.com' }];
 console.log(users[0]?.firstName ?? 'Array does not have firstName');
 const users2 = [{ lastName: 'Jones', email: 'hello@gmail.com' }];
 console.log(users2[0]?.firstName ?? 'Array does not have firstName');
+
+// Property names
+const properties = Object.keys(openingHours);
+let openStr = `We are open on ${properties.length} days: `;
+for (const day of properties) {
+  openStr += `${day}, `;
+}
+console.log(openStr);
+
+// Property values
+const values = Object.values(openingHours);
+console.log(values);
+
+// Entire object
+const entries = Object.entries(openingHours);
+for (const [day, { open, close }] of entries) {
+  console.log(`On ${day} we open at ${open} and close at ${close}`);
+}
