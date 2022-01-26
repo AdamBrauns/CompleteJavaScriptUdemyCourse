@@ -96,3 +96,32 @@ const entries = Object.entries(openingHours);
 for (const [day, { open, close }] of entries) {
   console.log(`On ${day} we open at ${open} and close at ${close}`);
 }
+
+// Sets only contain unique values
+const orderSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+console.log(orderSet);
+console.log(new Set('Jonas'));
+
+console.log(orderSet.size);
+console.log(orderSet.has('Pizza'));
+console.log(orderSet.has('Bread'));
+
+orderSet.add('Garlic Bread');
+orderSet.add('Garlic Bread');
+orderSet.delete('Risotto');
+console.log(orderSet);
+// You can clear the entire set with this:
+// orderSet.clear();
+
+// No way to get data out of a set like this
+// console.log(orderSet[0]);
+
+for (const order of orderSet) console.log(order);
+
+// Example: remove dupes in an array
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size);
+console.log(new Set('jonasschmedtmann').size);
